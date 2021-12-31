@@ -18,5 +18,21 @@ namespace Caretaker
         {
             DisplayAlert("Login", "LoginSuccessful", "OK");
         }
+
+        [Obsolete]
+        protected void Signup_Page(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://discord.gg/9cKGtRNDqZ"));
+        }
+
+        [Obsolete]
+        protected void Tandc(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://discord.gg/9cKGtRNDqZ"));
+        }
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+
+        }
     }
 }
