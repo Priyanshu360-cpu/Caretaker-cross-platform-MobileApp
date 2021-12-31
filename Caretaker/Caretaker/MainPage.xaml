@@ -6,11 +6,23 @@
     <ContentPage.Content>
         <StackLayout Padding="10" Margin="30,20,20,10">
             <Label Text="Login Registration Page"></Label>
-            <Entry Text="Enter Username"></Entry>
-            <DatePicker></DatePicker>
-            <Editor Text="Enter Password"></Editor>
+            <Label Text="UserName" TextColor="Black"/>
+            <Entry Text="" Placeholder="UserName" x:Name="UserNameEntry"/>
+            <Label Text="Password" TextColor="Black"/>
+            <Entry Text="" Placeholder="Password" IsPassword="True"/>
             <Button Text="Login" BackgroundColor="DarkGray"  TextColor="Black" Clicked="Button_Clicked"></Button>
-
+            <Label Text="First Time? Sign Up" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Signup_Page" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="Made with ♥ by Priyanshu"   
+           HorizontalOptions="Center"  
+           VerticalOptions="EndAndExpand">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Tandc" />
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

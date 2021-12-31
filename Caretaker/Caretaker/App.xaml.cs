@@ -15,6 +15,7 @@ namespace Caretaker
 
         protected override void OnStart()
         {
+            Console.WriteLine("OnStart");
         }
 
         protected override void OnSleep()
