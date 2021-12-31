@@ -11,7 +11,7 @@
             <Label Text="Password" TextColor="Black"/>
             <Entry Text="" Placeholder="Password" IsPassword="True"/>
             <Button Text="Login" BackgroundColor="DarkGray"  TextColor="Black" Clicked="Button_Clicked"></Button>
-            <Label Text="First Time? Sign Up" HorizontalOptions="Center">
+            <Label Text="First Time? Sign Up" HorizontalOptions="Center" >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="Signup_Page" />
                 </Label.GestureRecognizers>

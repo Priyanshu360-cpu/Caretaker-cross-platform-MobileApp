@@ -14,9 +14,10 @@ namespace Caretaker
         {
             InitializeComponent();
         }
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Login", "Login Successful", "OK");
+            await DisplayAlert("Login", "Login Successful", "OK").ConfigureAwait(false);
+            await Navigation.PushAsync(new Page1());
         }
 
         [Obsolete]
