@@ -22,6 +22,7 @@ namespace Caretaker
             {
                 if (PassEntry.Text == CPassEntry.Text)
                 {
+
                     await Navigation.PushAsync(new Page1(UserNameEntry.Text));
                     await DisplayAlert("Success", "Welcome to CareTaker", "OK").ConfigureAwait(false);
                 }
