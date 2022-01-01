@@ -23,7 +23,7 @@ namespace Caretaker
             }
             else
             {
-                await DisplayAlert("Invalid Credentials","Fill up the all the column","Ok").ConfigureAwait(false);
+                await DisplayAlert("Invalid Credentials","Fill up the all the credentials","Ok").ConfigureAwait(false);
             }
         }
 

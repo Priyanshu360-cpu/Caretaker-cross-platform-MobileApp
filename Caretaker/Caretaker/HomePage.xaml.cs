@@ -15,7 +15,7 @@ namespace Caretaker
         public Page1(String UserNameEntry)
         {
             InitializeComponent();
-            AppUserName.Text = "Hello," + UserNameEntry;
+            AppUserName.Text = "Hello There " + UserNameEntry;
         }
     }
 }
