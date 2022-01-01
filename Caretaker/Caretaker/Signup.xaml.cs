@@ -22,13 +22,28 @@ namespace Caretaker
             {
                 if (PassEntry.Text == CPassEntry.Text)
                 {
-
-                    await Navigation.PushAsync(new Page1(UserNameEntry.Text));
-                    await DisplayAlert("Success", "Welcome to CareTaker", "OK").ConfigureAwait(false);
+                    int parse;
+                    bool isNumber = int.TryParse(PhoneEntry.Text, out parse);
+                    if (isNumber == true)
+                    {
+                        if (EmailEntry.Text.Contains("@"))
+                        {
+                            await Navigation.PushAsync(new Page1(UserNameEntry.Text));
+                            await DisplayAlert("Success", "Welcome to CareTaker", "OK").ConfigureAwait(false);
+                        }
+                        else
+                        {
+                            await DisplayAlert("Invalid Email","Enter Correct Email Address","Ok").ConfigureAwait(false);
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Wrong Number", "Enter Correct Number", "OK").ConfigureAwait(false);
+                    }
                 }
                 else
                 {
-                    await DisplayAlert("Error","Password Didnt Match","ok").ConfigureAwait(false);
+                    await DisplayAlert("Error", "Password Didnt Match", "ok").ConfigureAwait(false);
                 }
             }
             else
