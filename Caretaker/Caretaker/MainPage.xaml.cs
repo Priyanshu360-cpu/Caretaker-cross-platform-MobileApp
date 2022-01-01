@@ -16,14 +16,21 @@ namespace Caretaker
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page1(UserNameEntry.Text));
-            await DisplayAlert("Login", "Login Successful", "OK").ConfigureAwait(false);
+            if (UserNameEntry.Text != ""&PassEntry.Text!="")
+            {
+                await Navigation.PushAsync(new Page1(UserNameEntry.Text));
+                await DisplayAlert("Login", "Login Successful", "OK").ConfigureAwait(false);
+            }
+            else
+            {
+                await DisplayAlert("Invalid Credentials","Fill up the all the column","Ok").ConfigureAwait(false);
+            }
         }
 
         [Obsolete]
-        protected void Signup_Page(object sender, EventArgs e)
+        protected async void Signup_Page(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://discord.gg/9cKGtRNDqZ"));
+            await Navigation.PushAsync(new Page2());
         }
 
         [Obsolete]

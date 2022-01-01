@@ -13,9 +13,14 @@ namespace Caretaker
             MainPage = new NavigationPage(new MainPage());
         }
 
-        protected override void OnStart()
+        protected async override void OnStart()
         {
-            Console.WriteLine("OnStart");
+            var progressBar = new ProgressBar
+            {
+                Progress = .2,
+            };
+            await progressBar.ProgressTo(.8, 250, Easing.Linear);
+
         }
 
         protected override void OnSleep()

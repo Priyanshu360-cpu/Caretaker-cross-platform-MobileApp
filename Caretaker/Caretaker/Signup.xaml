@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Caretaker.Page2" BackgroundImageSource="https://i.pinimg.com/280x280_RS/59/06/4e/59064e50006ff5c8b5cc991213fc34cc.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Margin="30,20,20,10">
+            <Label Text="Regsitration Page"></Label>
+            <Label Text="UserName" TextColor="Black"/>
+            <Entry Text="" Placeholder="UserName" x:Name="UserNameEntry"/>
+            <Label Text="Email Adress" TextColor="Black"/>
+            <Entry Text="" Placeholder="Valid Email" x:Name="EmailEntry"/>
+            <Label Text="Phone Number" TextColor="Black"/>
+            <Entry Text="" Placeholder="Valid Number" x:Name="PhoneEntry"/>
+            <Label Text="Password" TextColor="Black"/>
+            <Entry Text="" Placeholder="A Strong Password" IsPassword="True" x:Name="PassEntry"/>
+            <Label Text="Confirm Password" TextColor="Black"/>
+            <Entry Text="" Placeholder="Enter Password" IsPassword="True" x:Name="CPassEntry"/>
+            <Button Text="Sign Up" BackgroundColor="DarkGray"  TextColor="Black" Clicked="Sign_Up"></Button>
+            <Label Text="Made with ♥ by Priyanshu"   
+           HorizontalOptions="Center"  
+           VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
