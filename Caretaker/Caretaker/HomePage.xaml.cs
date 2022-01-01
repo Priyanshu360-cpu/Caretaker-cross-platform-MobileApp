@@ -16,6 +16,13 @@ namespace Caretaker
         {
             InitializeComponent();
             AppUserName.Text = "Hello There " + UserNameEntry;
+            var browser = new WebView
+            {
+                Source = "https://dotnet.microsoft.com/apps/xamarin"
+            };
+            browser.Reload();
         }
+       
+
     }
 }
