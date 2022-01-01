@@ -16,8 +16,8 @@ namespace Caretaker
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Login", "Login Successful", "OK").ConfigureAwait(false);
             await Navigation.PushAsync(new Page1());
+            await DisplayAlert("Login", "Login Successful", "OK").ConfigureAwait(false);
         }
 
         [Obsolete]
