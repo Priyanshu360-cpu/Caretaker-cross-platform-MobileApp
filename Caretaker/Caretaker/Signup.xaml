@@ -11,6 +11,8 @@
             <Entry Text="" Placeholder="Valid Email" x:Name="EmailEntry"/>
             <Label Text="Phone Number" TextColor="Black"/>
             <Entry Text="" Placeholder="Valid Number" x:Name="PhoneEntry"/>
+            <Label Text="Date of Birth" TextColor="Black"/>
+            <DatePicker x:Name="DobEntry"></DatePicker>
             <Label Text="Password" TextColor="Black"/>
             <Entry Text="" Placeholder="A Strong Password" IsPassword="True" x:Name="PassEntry"/>
             <Label Text="Confirm Password" TextColor="Black"/>
