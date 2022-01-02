@@ -16,13 +16,16 @@ namespace Caretaker
         {
             InitializeComponent();
             AppUserName.Text = "Hello There " + UserNameEntry;
-            var browser = new WebView
-            {
-                Source = "https://dotnet.microsoft.com/apps/xamarin"
-            };
-            browser.Reload();
         }
-       
-
+        private async void SearchPro(object sender, EventArgs e)
+        {
+            await DisplayAlert("Pop up", "Signal recieved", "OK").ConfigureAwait(false);
+        }
+       private async void MonitorPro(object sender, EventArgs e)
+        {
+            await DisplayAlert("Pop up", "Monitor Page To be Pushed", "OK").ConfigureAwait(false);
+        
     }
+
+        }
 }
