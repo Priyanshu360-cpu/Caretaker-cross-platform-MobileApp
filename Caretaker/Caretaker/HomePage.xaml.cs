@@ -30,6 +30,14 @@ namespace Caretaker
         {
             await DisplayAlert("Pop up", "Doctor Template Here", "Ok").ConfigureAwait(false);
         }
+        private async void MedsPro(object sender,EventArgs e)
+        {
+            await DisplayAlert("Pop up", "Medicine info Page", "Ok").ConfigureAwait(false);
+        }
+        private async void PremiumPro(object sender,EventArgs e)
+        {
+            await DisplayAlert("Pop Up", "Premium Feature", "Ok").ConfigureAwait(false);
+        }
 
         }
 }
