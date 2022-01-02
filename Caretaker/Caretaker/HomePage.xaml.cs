@@ -15,7 +15,7 @@ namespace Caretaker
         public Page1(String UserNameEntry)
         {
             InitializeComponent();
-            AppUserName.Text = "Hello There " + UserNameEntry;
+            AppUserName.Text = "Hello There " + UserNameEntry+"!";
         }
         private async void SearchPro(object sender, EventArgs e)
         {
