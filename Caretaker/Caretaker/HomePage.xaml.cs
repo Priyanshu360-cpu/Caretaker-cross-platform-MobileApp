@@ -26,6 +26,10 @@ namespace Caretaker
             await DisplayAlert("Pop up", "Monitor Page To be Pushed", "OK").ConfigureAwait(false);
         
     }
+        private async void DoctorPro(object sender, EventArgs e)
+        {
+            await DisplayAlert("Pop up", "Doctor Template Here", "Ok").ConfigureAwait(false);
+        }
 
         }
 }

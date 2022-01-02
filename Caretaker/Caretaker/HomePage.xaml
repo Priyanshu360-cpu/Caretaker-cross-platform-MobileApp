@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Caretaker.Page1" Title="CareTaker">
+    <ScrollView>
     <StackLayout BackgroundColor="White" Padding="10" Margin="30,20,20,10">
         <Label x:Name="AppUserName" FontSize="20"/>
         <Label Text="Search your Problem" TextColor="Black" FontSize="40"></Label>
@@ -9,5 +10,10 @@
         <Label Text="Monitor my Health" TextColor="Black" FontSize="40"></Label>
         <Image Source="https://cdn.discordapp.com/attachments/921847291659305020/927086489416912946/cardiograph.jpg"></Image>
         <Button Text="Monitor" Clicked="MonitorPro"></Button>
+        <Label Text="---------------------------------------------------------------------" TextColor="Black"></Label>
+        <Label Text="Find Doctors around me" TextColor="Black" FontSize="40"></Label>
+        <Image Source="https://cdn.discordapp.com/attachments/921847291659305020/927090943432204318/dcotor-Template.jpg"></Image>
+        <Button Text="Find" Clicked="DoctorPro"></Button>
     </StackLayout>
+        </ScrollView>
 </ContentPage>  
