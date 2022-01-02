@@ -22,6 +22,7 @@
             <Label Text="Auto Health A.I" TextColor="Black" FontSize="40"></Label>
             <Image Source="https://cdn.discordapp.com/attachments/921847291659305020/927111178386292767/unknown.png"></Image>
             <Button Text="Premium" Clicked="PremiumPro"></Button>
+            <Label Text="---------------------------------------------------------------------" TextColor="Black"></Label>
             <Label Text="Made with ♥ by Priyanshu"   
            HorizontalOptions="Center"  
            VerticalOptions="EndAndExpand"/>
