@@ -19,6 +19,9 @@
     <Compile Update="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="AI_Monitor.xaml.cs">
+      <DependentUpon>AI_Monitor.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Signup.xaml.cs">
       <DependentUpon>Signup.xaml</DependentUpon>
     </Compile>
@@ -26,6 +29,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AI_Monitor.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Signup.xaml">

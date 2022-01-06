@@ -23,7 +23,8 @@ namespace Caretaker
         }
        private async void MonitorPro(object sender, EventArgs e)
         {
-            await DisplayAlert("Pop up", "Monitor Page To be Pushed", "OK").ConfigureAwait(false);
+            await Navigation.PushAsync(new monitor());
+            await DisplayAlert("Pop up", "Welcome to Monitor Check Page", "OK").ConfigureAwait(false);
         
     }
         private async void DoctorPro(object sender, EventArgs e)
